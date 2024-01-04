@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     region = "ap-south-1"
-    bucket = "bucketforstate2024"
+    bucket = "mybucketforstate2024"
     key    = "tf_state_main/terraform.tfstate"
     dynamodb_table = "terraform_state_monitor"
   }
