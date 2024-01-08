@@ -18,12 +18,12 @@ resource "aws_s3_bucket_versioning" "ver" {
   }
 }
 #EC2 region mum
-resource "aws_instance" "mumbai" {
+resource "aws_instance" "mum001" {
   ami           = "ami-08fe36427228eddc4"
   instance_type = "t2.micro"
   key_name      = "terkey"
   tags = {
-    Name = "webserver_mumbai"
+    Name = "todaywebser"
     Envo = "Linux"
   }
 }
